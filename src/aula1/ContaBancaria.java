@@ -22,6 +22,6 @@ public class ContaBancaria {
     }
 
     boolean validar(String identificador, String senha){
-        return this.identificador.equals(identificador) && this.senha.equals(senha);
+        return this.identificador.equals(identificador) && this.senha.equals(senha);   //verifica se a senha e o identificador sao os corretos // retornando true se a senha e o id forem certos
     }
 }

@@ -15,7 +15,7 @@ public class Banco {
             switch (opc) {
                 case 'c' -> {
                     if (numContas < 10) {
-                        contas[numContas] = new ContaBancaria();
+                        contas[numContas] = new ContaBancaria(); //cria uma nova instancia e armazena no contas
                         ler.nextLine(); 
                         System.out.print("qual o nome do titular: ");
                         String titular = ler.nextLine();
@@ -24,7 +24,7 @@ public class Banco {
                         System.out.print("qual o deposito inicial: ");
                         float valor = ler.nextFloat();
                         contas[numContas].titular = titular;
-                        contas[numContas].identificador = "conta" + new Random().nextInt(100, 400);
+                        contas[numContas].identificador = "conta" + new Random().nextInt(100, 400); //identificador gerado entre 100 e 400
                         contas[numContas].senha = senha;
                         contas[numContas].depositar(valor);
                         System.out.println("Conta cadastrada no id: " + contas[numContas].identificador);
