@@ -21,7 +21,7 @@ public class ContaCorrente extends Conta {
      
      public String verifica(float saldo){
          if(saldo>=0){
-          String retorno = String.format("slimite de "+ saldo);
+        //   String retorno = String.format("limite de "+ saldo);
          }
          else{
              System.out.printf("limite de R$ ", saldo, saldo+limite);

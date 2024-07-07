@@ -6,15 +6,17 @@ import java.util.Scanner;
 public class Banco{
 
 	public static String leString(String mensagem){
-		Scanner ler = new Scanner(System.in);
-		System.out.print(mensagem+": ");
-		return ler.nextLine();
+		try (Scanner ler = new Scanner(System.in)) {
+			System.out.print(mensagem+": ");
+			return ler.nextLine();
+		}
 	}
 
 	public static float leFloat(String mensagem){
-		Scanner ler = new Scanner(System.in);
-		System.out.print(mensagem+": ");
-		return ler.nextFloat();
+		try (Scanner ler = new Scanner(System.in)) {
+			System.out.print(mensagem+": ");
+			return ler.nextFloat();
+		}
 	}
 
 	public static ContaCorrente acessaCC(ContaCorrente c1){
